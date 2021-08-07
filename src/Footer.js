@@ -54,13 +54,14 @@ const Footer = () => {
                 <ListItemText secondary="Privacy Policy" />
               </ListItem>
             </Link>
+            <Link to="/cookies-policy" style={{ textDecoration: 'none' }}>
               <ListItem button>
                 <ListItemIcon>
                   <EmojiFoodBeverage />
                 </ListItemIcon>
                 <ListItemText secondary="Cookies Policy" />
               </ListItem>
-
+            </Link>
           </List>
         </Grid>
         <Grid item xs={12} sm={12} md={3}>

@@ -3,6 +3,7 @@ import { Link, Route } from 'react-router-dom';
 import About from "./About.js";
 import Terms from "./Terms.js";
 import PrivacyPolicy from "./PrivacyPolicy.js";
+import CookiesPolicy from "./CookiesPolicy.js";
 import { Chess } from 'redux-chess';
 
 const MainNav = () => {
@@ -45,6 +46,10 @@ const MainNav = () => {
       <Route
         path="/privacy-policy"
         render={(props) => <PrivacyPolicy {...props} />}
+      />
+      <Route
+        path="/cookies-policy"
+        render={(props) => <CookiesPolicy {...props} />}
       />
     </div>
   );
