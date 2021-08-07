@@ -1,7 +1,4 @@
-import { CssBaseline } from '@material-ui/core';
 import { Chess } from 'redux-chess';
-import MainNav from './MainNav';
-import Footer from './Footer';
 import './ReduxChessDemo.css';
 
 const props = {
@@ -12,15 +9,12 @@ const props = {
   }
 };
 
-function App() {
+function Home() {
   return (
     <div className="redux-chess-demo">
-      <CssBaseline />
-      <MainNav />
       <Chess props={props} />
-      <Footer />
     </div>
   );
 }
 
-export default App;
+export default Home;
