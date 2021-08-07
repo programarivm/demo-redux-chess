@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Grid, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import EmojiFoodBeverage from '@material-ui/icons/EmojiFoodBeverageTwoTone';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -9,7 +9,6 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import Typography from '@material-ui/core/Typography';
 import CookieConsent from 'react-cookie-consent';
 import { makeStyles } from '@material-ui/core/styles';
-import Terms from "./Terms.js";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -85,10 +84,6 @@ const Footer = () => {
           </List>
         </Grid>
       </Grid>
-      <Route
-        path="/terms"
-        render={(props) => <Terms {...props} />}
-      />
       <CookieConsent>
         Cookies? Mmm, they are delicious! This website does not collect personal data through third-party cookies.
       </CookieConsent>

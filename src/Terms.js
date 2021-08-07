@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function About() {
+function Terms() {
   const classes = useStyles();
 
   return <div>
@@ -62,4 +62,4 @@ function About() {
   </div>
 }
 
-export default About;
+export default Terms;

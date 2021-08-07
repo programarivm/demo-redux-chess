@@ -1,6 +1,8 @@
 import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
-import { Link, Route, Redirect } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import About from "./About.js";
+import Terms from "./Terms.js";
+import { Chess } from 'redux-chess';
 
 const MainNav = () => {
   return (
@@ -9,20 +11,35 @@ const MainNav = () => {
         <Toolbar>
           <Grid container justify="space-between">
             <Grid item>
-                <img src="logo.png" alt="Redux Chess Demo" />
+              <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                Redux Chess Demo
+              </Link>
             </Grid>
             <Grid item style={{ marginTop: 10 }}>
-              <Link to="/about">
+              <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>
                 <Button variant="text" color="inherit">About</Button>
               </Link>
             </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
-      <Route exact path="/" render={() => (<Redirect to="/" />)} />
+      <Route
+        exact path="/"
+        render={(props) => <Chess props={ {
+          server: {
+            prot: 'wss',
+            host: 'pchess.net',
+            port: '8443'
+          }
+        }} />}
+      />
       <Route
         path="/about"
         render={(props) => <About {...props} />}
+      />
+      <Route
+        path="/terms"
+        render={(props) => <Terms {...props} />}
       />
     </div>
   );
