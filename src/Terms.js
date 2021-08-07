@@ -19,7 +19,7 @@ function Terms() {
     <Container maxWidth="lg">
       <Box className={classes.box}>
         <Typography variant="h4" component="h1" align="center" gutterBottom>
-          Terms
+          Terms of Use
         </Typography>
         <Typography variant="caption" component="p" align="center">
           Last Revised: August 7, 2021
