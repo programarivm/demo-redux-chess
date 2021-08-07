@@ -2,6 +2,7 @@ import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
 import { Link, Route } from 'react-router-dom';
 import About from "./About.js";
 import Terms from "./Terms.js";
+import PrivacyPolicy from "./PrivacyPolicy.js";
 import { Chess } from 'redux-chess';
 
 const MainNav = () => {
@@ -40,6 +41,10 @@ const MainNav = () => {
       <Route
         path="/terms"
         render={(props) => <Terms {...props} />}
+      />
+      <Route
+        path="/privacy-policy"
+        render={(props) => <PrivacyPolicy {...props} />}
       />
     </div>
   );

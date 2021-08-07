@@ -46,14 +46,14 @@ const Footer = () => {
                 <ListItemText secondary="Terms of Use" />
               </ListItem>
             </Link>
-
+            <Link to="/privacy-policy" style={{ textDecoration: 'none' }}>
               <ListItem button>
                 <ListItemIcon>
                   <LockIcon />
                 </ListItemIcon>
                 <ListItemText secondary="Privacy Policy" />
               </ListItem>
-
+            </Link>
               <ListItem button>
                 <ListItemIcon>
                   <EmojiFoodBeverage />
