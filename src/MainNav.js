@@ -21,9 +21,9 @@ const MainNav = () => {
       </AppBar>
       <Route exact path="/" render={() => (<Redirect to="/" />)} />
       <Route
-          path="/about"
-          render={(props) => <About {...props} />}
-        />
+        path="/about"
+        render={(props) => <About {...props} />}
+      />
     </div>
   );
 }
