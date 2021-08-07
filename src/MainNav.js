@@ -5,6 +5,7 @@ import Terms from "./Terms.js";
 import PrivacyPolicy from "./PrivacyPolicy.js";
 import CookiesPolicy from "./CookiesPolicy.js";
 import { Chess } from 'redux-chess';
+import logo from './assets/img/logo.png';
 
 const MainNav = () => {
   return (
@@ -14,7 +15,7 @@ const MainNav = () => {
           <Grid container justify="space-between">
             <Grid item>
               <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-                Redux Chess Demo
+                <img src={logo} className="logo" alt="logo" />
               </Link>
             </Grid>
             <Grid item style={{ marginTop: 10 }}>
@@ -25,16 +26,18 @@ const MainNav = () => {
           </Grid>
         </Toolbar>
       </AppBar>
-      <Route
-        exact path="/"
-        render={(props) => <Chess props={ {
-          server: {
-            prot: 'wss',
-            host: 'pchess.net',
-            port: '8443'
-          }
-        }} />}
-      />
+      <div style={{ margin: 15 }}>
+        <Route
+          exact path="/"
+          render={(props) => <Chess props={ {
+            server: {
+              prot: 'wss',
+              host: 'pchess.net',
+              port: '8443'
+            }
+          }} />}
+        />
+      </div>
       <Route
         path="/about"
         render={(props) => <About {...props} />}
