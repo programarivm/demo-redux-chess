@@ -1,16 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Chess } from 'redux-chess';
-
-const props = {
-  server: {
-    prot: 'wss',
-    host: 'pchess.net',
-    port: '8443'
-  }
-};
+import App from './App.js';
 
 ReactDOM.render(
-  <Chess props={props} />,
+  <App />,
   document.getElementById('redux-chess')
 );
