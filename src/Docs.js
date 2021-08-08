@@ -12,14 +12,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function About() {
+function Docs() {
   const classes = useStyles();
 
   return <div>
     <Container maxWidth="lg">
       <Box className={classes.box}>
         <Typography variant="h4" component="h1" align="center" gutterBottom>
-          About
+          Docs
         </Typography>
         <Typography variant="caption" component="p" align="center">
           Last Revised: August 7, 2021
@@ -62,4 +62,4 @@ function About() {
   </div>
 }
 
-export default About;
+export default Docs;
