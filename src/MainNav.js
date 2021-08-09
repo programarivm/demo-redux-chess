@@ -1,5 +1,6 @@
 import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
 import { Link, Route } from 'react-router-dom';
+import DescriptionIcon from '@material-ui/icons/Description';
 import Docs from "./Docs.js";
 import Terms from "./Terms.js";
 import PrivacyPolicy from "./PrivacyPolicy.js";
@@ -20,7 +21,14 @@ const MainNav = () => {
             </Grid>
             <Grid item style={{ marginTop: 10 }}>
               <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>
-                <Button variant="text" color="inherit">Docs</Button>
+                <Button
+                  variant="text"
+                  color="inherit"
+                  style={{textTransform: 'none'}}
+                  startIcon={<DescriptionIcon />}
+                >
+                  Documentation
+                </Button>
               </Link>
             </Grid>
           </Grid>
