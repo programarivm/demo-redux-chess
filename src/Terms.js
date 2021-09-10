@@ -22,7 +22,7 @@ function Terms() {
           Terms of Use
         </Typography>
         <Typography variant="caption" component="p" align="center">
-          Last Revised: August 9, 2021
+          Last Revised: September 10, 2021
         </Typography>
       </Box>
       <Grid container>

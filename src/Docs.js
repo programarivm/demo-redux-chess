@@ -27,7 +27,7 @@ function Docs() {
           An easily embeddable chessboard into your React app
         </Typography>
         <Typography variant="caption" component="p" align="center">
-          Last Revised: August 9, 2021
+          Last Revised: September 10, 2021
         </Typography>
       </Box>
       <Grid container>
@@ -85,7 +85,7 @@ import { Chess } from 'redux-chess';
 
 const props = {
   server: {
-    port: 'ws',
+    prot: 'ws',
     host: '127.0.0.1',
     port: '8080'
   }
@@ -156,6 +156,12 @@ Listening to commands...`}
                 <li><Link href="https://medium.com/geekculture/a-simple-example-of-ssl-tls-websocket-with-reactphp-and-ratchet-e03be973f521">A Simple Example of SSL/TLS WebSocket With ReactPHP and Ratchet</Link></li>
                 <li><Link href="https://medium.com/geekculture/newbie-tutorial-on-how-to-rate-limit-a-websocket-server-8e28642ad5ff">Newbie Tutorial on How to Rate-Limit a WebSocket Server</Link></li>
               </ul>
+            </Typography>
+            <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
+              Testing Environment
+            </Typography>
+            <Typography variant="body1" paragraph>
+                In order to develop the redux-chess package locally, you may want to look at the <Link href="https://github.com/programarivm/testing-redux-chess">testing environment repo</Link> as well.
             </Typography>
             <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
               License
