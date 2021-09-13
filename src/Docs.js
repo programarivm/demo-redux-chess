@@ -27,7 +27,7 @@ function Docs() {
           An easily embeddable chessboard into your React app
         </Typography>
         <Typography variant="caption" component="p" align="center">
-          Last Revised: September 10, 2021
+          Last Revised: September 13, 2021
         </Typography>
       </Box>
       <Grid container>
@@ -40,7 +40,7 @@ function Docs() {
               Via npm:
             </Typography>
             <CopyBlock
-              text={`$ npm i redux-chess`}
+              text={`$ npm i @chesslab/redux-chess`}
               language="text"
               theme={dracula}
               showLineNumbers={false}
@@ -55,7 +55,7 @@ function Docs() {
             <CopyBlock
               text={`import React from 'react';
 import ReactDOM from 'react-dom';
-import { Chess } from 'redux-chess';
+import { Chess } from '@chesslab/redux-chess';
 
 const props = {
   server: {
@@ -81,7 +81,7 @@ ReactDOM.render(
             <CopyBlock
               text={`import React from 'react';
 import ReactDOM from 'react-dom';
-import { Chess } from 'redux-chess';
+import { Chess } from '@chesslab/redux-chess';
 
 const props = {
   server: {
@@ -106,7 +106,7 @@ ReactDOM.render(
               Thank you for your interest in this exciting project!
             </Typography>
             <Typography variant="body1" paragraph>
-              It may appear as if being quite challenging provided it requires this chess server up and running. <code>redux-chess</code> is "just a chessboard" as lightweight as it can possibly be.
+              It may appear as if being quite challenging provided it requires this chess server up and running. <code>@chesslab/redux-chess</code> is "just a chessboard" as lightweight as it can possibly be.
             </Typography>
             <Typography variant="body1" paragraph>
               The chessboard just sends messages to a WebSocket server so make sure the chess server is running on localhost:
@@ -161,7 +161,7 @@ Listening to commands...`}
               Testing Environment
             </Typography>
             <Typography variant="body1" paragraph>
-                In order to develop the redux-chess package locally, you may want to look at the <Link href="https://github.com/chesslab/testing-redux-chess">testing environment repo</Link> as well.
+                In order to develop the <code>@chesslab/redux-chess</code> package locally, you may want to look at the <Link href="https://github.com/chesslab/testing-redux-chess">testing environment repo</Link> as well.
             </Typography>
             <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
               License
