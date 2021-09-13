@@ -1,11 +1,11 @@
 import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
 import { Link, Route } from 'react-router-dom';
 import DescriptionIcon from '@material-ui/icons/Description';
+import { Chess } from '@chesslab/redux-chess';
 import Docs from "./Docs.js";
 import Terms from "./Terms.js";
 import PrivacyPolicy from "./PrivacyPolicy.js";
 import CookiesPolicy from "./CookiesPolicy.js";
-import { Chess } from 'redux-chess';
 import logo from './assets/img/logo.png';
 
 const MainNav = () => {
