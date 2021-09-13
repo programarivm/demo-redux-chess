@@ -76,7 +76,7 @@ ReactDOM.render(
               Please note that at this moment the sandbox server may not be up all the time.
             </Typography>
             <Typography variant="body1" paragraph>
-              Initialization with a custom <Link href="https://github.com/programarivm/chess-server">local chess server</Link>:
+              Initialization with a custom <Link href="https://github.com/chesslab/chess-server">local chess server</Link>:
             </Typography>
             <CopyBlock
               text={`import React from 'react';
@@ -151,7 +151,7 @@ Listening to commands...`}
                 <li><Link href="https://javascript.plainenglish.io/testing-a-local-react-npm-package-with-ease-7d0668676ddb">How to Test a Local React NPM Package With Ease</Link></li>
                 <li><Link href="https://medium.com/geekculture/tdding-a-react-app-with-jest-the-easy-way-8ddb64aeaba6">TDDing a React App With Jest the Easy Way</Link></li>
                 <li><Link href="https://javascript.plainenglish.io/looking-forward-to-testing-react-components-with-joy-5bb3f86c21d7">How to Test React Components With Joy</Link></li>
-                <li><Link href="https://programarivm.medium.com/my-first-integration-test-in-a-redux-hooked-app-3b189addd46e">My First Integration Test in a Redux Hooked App</Link></li>
+                <li><Link href="https://javascript.plainenglish.io/my-first-integration-test-in-a-redux-hooked-app-3b189addd46e">My First Integration Test in a Redux Hooked App</Link></li>
                 <li><Link href="https://medium.com/geekculture/creating-a-local-websocket-server-with-tls-ssl-is-easy-as-pie-de1a2ef058e0">Creating a Local WebSocket Server With TLS/SSL Is Easy as Pie</Link></li>
                 <li><Link href="https://medium.com/geekculture/a-simple-example-of-ssl-tls-websocket-with-reactphp-and-ratchet-e03be973f521">A Simple Example of SSL/TLS WebSocket With ReactPHP and Ratchet</Link></li>
                 <li><Link href="https://medium.com/geekculture/newbie-tutorial-on-how-to-rate-limit-a-websocket-server-8e28642ad5ff">Newbie Tutorial on How to Rate-Limit a WebSocket Server</Link></li>
@@ -161,7 +161,7 @@ Listening to commands...`}
               Testing Environment
             </Typography>
             <Typography variant="body1" paragraph>
-                In order to develop the redux-chess package locally, you may want to look at the <Link href="https://github.com/programarivm/testing-redux-chess">testing environment repo</Link> as well.
+                In order to develop the redux-chess package locally, you may want to look at the <Link href="https://github.com/chesslab/testing-redux-chess">testing environment repo</Link> as well.
             </Typography>
             <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
               License
@@ -175,7 +175,7 @@ Listening to commands...`}
             <Typography variant="body1" paragraph style={{marginTop: 10}}>
               Would you help make this app better?
               <ul>
-                <li>Look at the <Link href="https://github.com/programarivm/redux-chess/issues">open issues</Link></li>
+                <li>Look at the <Link href="https://github.com/chesslab/redux-chess/issues">open issues</Link></li>
                 <li>Send a pull request</li>
                 <li>Drop <Link href="https://programarivm.com/about">an email</Link></li>
                 <li>Leave me a <Link href="https://twitter.com/programarivm">message on Twitter</Link></li>
