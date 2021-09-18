@@ -1,7 +1,7 @@
 import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
 import { Link, Route } from 'react-router-dom';
 import DescriptionIcon from '@material-ui/icons/Description';
-import { Chess } from '@chesslab/redux-chess';
+import { Chess } from '@chesslablab/redux-chess';
 import Docs from "./Docs.js";
 import Terms from "./Terms.js";
 import PrivacyPolicy from "./PrivacyPolicy.js";

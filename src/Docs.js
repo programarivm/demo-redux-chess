@@ -40,7 +40,7 @@ function Docs() {
               Via npm:
             </Typography>
             <CopyBlock
-              text={`$ npm i @chesslab/redux-chess`}
+              text={`$ npm i @chesslablab/redux-chess`}
               language="text"
               theme={dracula}
               showLineNumbers={false}
@@ -55,7 +55,7 @@ function Docs() {
             <CopyBlock
               text={`import React from 'react';
 import ReactDOM from 'react-dom';
-import { Chess } from '@chesslab/redux-chess';
+import { Chess } from '@chesslablab/redux-chess';
 
 const props = {
   server: {
@@ -76,12 +76,12 @@ ReactDOM.render(
               Please note that at this moment the sandbox server may not be up all the time.
             </Typography>
             <Typography variant="body1" paragraph>
-              Initialization with a custom <Link href="https://github.com/chesslab/chess-server">local chess server</Link>:
+              Initialization with a custom <Link href="https://github.com/chesslablab/chess-server">local chess server</Link>:
             </Typography>
             <CopyBlock
               text={`import React from 'react';
 import ReactDOM from 'react-dom';
-import { Chess } from '@chesslab/redux-chess';
+import { Chess } from '@chesslablab/redux-chess';
 
 const props = {
   server: {
@@ -106,7 +106,7 @@ ReactDOM.render(
               Thank you for your interest in this exciting project!
             </Typography>
             <Typography variant="body1" paragraph>
-              It may appear as if being quite challenging provided it requires this chess server up and running. <code>@chesslab/redux-chess</code> is "just a chessboard" as lightweight as it can possibly be.
+              It may appear as if being quite challenging provided it requires this chess server up and running. <code>@chesslablab/redux-chess</code> is "just a chessboard" as lightweight as it can possibly be.
             </Typography>
             <Typography variant="body1" paragraph>
               The chessboard just sends messages to a WebSocket server so make sure the chess server is running on localhost:
@@ -161,7 +161,7 @@ Listening to commands...`}
               Testing Environment
             </Typography>
             <Typography variant="body1" paragraph>
-                In order to develop the <code>@chesslab/redux-chess</code> package locally, you may want to look at the <Link href="https://github.com/chesslab/testing-redux-chess">testing environment repo</Link> as well.
+                In order to develop the <code>@chesslablab/redux-chess</code> package locally, you may want to look at the <Link href="https://github.com/chesslablab/testing-redux-chess">testing environment repo</Link> as well.
             </Typography>
             <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
               License
@@ -175,7 +175,7 @@ Listening to commands...`}
             <Typography variant="body1" paragraph style={{marginTop: 10}}>
               Would you help make this app better?
               <ul>
-                <li>Look at the <Link href="https://github.com/chesslab/redux-chess/issues">open issues</Link></li>
+                <li>Look at the <Link href="https://github.com/chesslablab/redux-chess/issues">open issues</Link></li>
                 <li>Send a pull request</li>
                 <li>Drop <Link href="https://programarivm.com/about">an email</Link></li>
                 <li>Leave me a <Link href="https://twitter.com/programarivm">message on Twitter</Link></li>
