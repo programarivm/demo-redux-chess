@@ -13,7 +13,7 @@ const MainNav = () => {
     <div>
       <AppBar position="relative">
         <Toolbar>
-          <Grid container justify="space-between">
+          <Grid container justifyContent="space-between">
             <Grid item>
               <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
                 <img src={logo} className="logo" alt="logo" />
