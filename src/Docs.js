@@ -119,7 +119,10 @@ Commands available:
 /ascii Prints the ASCII representation of the game.
 /castling Gets the castling status.
 /captures Gets the pieces captured by both players.
+/draw {"action":["accept","decline","propose"]} Allows to offer a draw.
+/events Gets the events taking place on the game.
 /fen Prints the FEN string representation of the game.
+/heuristicpicture Takes a balanced heuristic picture of the current game.
 /history The current game's history.
 /ischeck Finds out if the game is in check.
 /ismate Finds out if the game is over.
@@ -127,8 +130,11 @@ Commands available:
 /pieces {"color":["w","b"]} Gets the pieces on the board by color.
 /playfen {"fen":"string"} Plays a chess move in shortened FEN format.
 /quit Quits a game.
-/start {"mode":["analysis","playfriend"],"color":["w","b"],"min":"int"} Starts a new game.
+/resign {"action":["accept"]} Allows to resign a game.
+/start {"mode":["analysis","loadfen","playfriend"],"fen":"string","color":["w","b"],"min":"int"} Starts a new game.
 /status The current game status.
+/takeback {"action":["accept","decline","propose"]} Allows to manage a takeback.
+/undomove Undoes the last move.
 
 Listening to commands...`}
               language="text"
@@ -136,33 +142,6 @@ Listening to commands...`}
               showLineNumbers={false}
               codeBlock
             />
-            <Typography variant="body1" paragraph style={{marginTop: 10}}>
-              For further information on developing this awesome npm package, you're all invited to read my learning journey:
-              <ul>
-                <li><Link href="https://medium.com/geekculture/demystifying-ai-through-a-human-like-chess-engine-5f71e3896cc9">Demystifying AI Through a Human-Like Chess Engine</Link></li>
-                <li><Link href="https://medium.com/geekculture/two-things-that-my-ai-project-required-50000297053b">Two Things That My AI Project Required</Link></li>
-                <li><Link href="https://medium.com/geekculture/what-are-some-healthy-tips-to-reduce-cognitive-load-4f91b695a3cb">What Are Some Healthy Tips to Reduce Cognitive Load?</Link></li>
-                <li><Link href="https://medium.com/geekculture/how-to-take-normalized-heuristic-pictures-79ca0df4cdec">How to Take Normalized Heuristic Pictures</Link></li>
-                <li><Link href="https://medium.com/geekculture/equilibrium-yin-yang-chess-292e044be46b">Equilibrium, Yin-Yang Chess</Link></li>
-                <li><Link href="https://medium.com/geekculture/adding-classes-to-a-solid-codebase-without-breaking-anything-else-99e6c5a5f3e4">Adding Classes to a SOLID Codebase Without Breaking Anything Else</Link></li>
-                <li><Link href="https://ai.plainenglish.io/preparing-a-dataset-for-machine-learning-with-php-fd68dd85187e">Preparing a Dataset for Machine Learning With PHP</Link></li>
-                <li><Link href="https://medium.com/geekculture/converting-a-fen-chess-position-into-a-pgn-move-4a278d81b21f">Converting a FEN Chess Position Into a PGN Move</Link></li>
-                <li><Link href="https://medium.com/geekculture/a-react-chessboard-with-redux-and-hooks-in-few-lines-6009cb724bb">A React Chessboard with Redux and Hooks in Few Lines</Link></li>
-                <li><Link href="https://javascript.plainenglish.io/testing-a-local-react-npm-package-with-ease-7d0668676ddb">How to Test a Local React NPM Package With Ease</Link></li>
-                <li><Link href="https://medium.com/geekculture/tdding-a-react-app-with-jest-the-easy-way-8ddb64aeaba6">TDDing a React App With Jest the Easy Way</Link></li>
-                <li><Link href="https://javascript.plainenglish.io/looking-forward-to-testing-react-components-with-joy-5bb3f86c21d7">How to Test React Components With Joy</Link></li>
-                <li><Link href="https://javascript.plainenglish.io/my-first-integration-test-in-a-redux-hooked-app-3b189addd46e">My First Integration Test in a Redux Hooked App</Link></li>
-                <li><Link href="https://medium.com/geekculture/creating-a-local-websocket-server-with-tls-ssl-is-easy-as-pie-de1a2ef058e0">Creating a Local WebSocket Server With TLS/SSL Is Easy as Pie</Link></li>
-                <li><Link href="https://medium.com/geekculture/a-simple-example-of-ssl-tls-websocket-with-reactphp-and-ratchet-e03be973f521">A Simple Example of SSL/TLS WebSocket With ReactPHP and Ratchet</Link></li>
-                <li><Link href="https://medium.com/geekculture/newbie-tutorial-on-how-to-rate-limit-a-websocket-server-8e28642ad5ff">Newbie Tutorial on How to Rate-Limit a WebSocket Server</Link></li>
-              </ul>
-            </Typography>
-            <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
-              Testing Environment
-            </Typography>
-            <Typography variant="body1" paragraph>
-                In order to develop the <code>@chesslablab/redux-chess</code> package locally, you may want to look at the <Link href="https://github.com/chesslablab/testing-redux-chess">testing environment repo</Link> as well.
-            </Typography>
             <Typography variant="h5" style={{marginTop: 20}} gutterBottom>
               License
             </Typography>
@@ -173,14 +152,7 @@ Listening to commands...`}
               Contributions
             </Typography>
             <Typography variant="body1" paragraph style={{marginTop: 10}}>
-              Would you help make this app better?
-              <ul>
-                <li>Look at the <Link href="https://github.com/chesslablab/redux-chess/issues">open issues</Link></li>
-                <li>Send a pull request</li>
-                <li>Drop <Link href="https://programarivm.com/about">an email</Link></li>
-                <li>Leave me a <Link href="https://twitter.com/programarivm">message on Twitter</Link></li>
-              </ul>
-              Happy learning! Thank you, and keep it up.
+              See the <Link href="https://github.com/chesslablab/redux-chess/blob/master/CONTRIBUTING.md">contributing guidelines</Link>. Happy learning and coding! Thank you, and keep it up.
             </Typography>
           </Paper>
         </Grid>
