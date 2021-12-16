@@ -22,7 +22,7 @@ function PrivacyPolicy() {
           Privacy Policy
         </Typography>
         <Typography variant="caption" component="p" align="center">
-          Last Revised: September 13, 2021
+          Last Revised: December 16, 2021
         </Typography>
       </Box>
       <Grid container>

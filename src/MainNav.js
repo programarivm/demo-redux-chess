@@ -34,18 +34,16 @@ const MainNav = () => {
           </Grid>
         </Toolbar>
       </AppBar>
-      <div style={{ margin: 15 }}>
-        <Route
-          exact path="/"
-          render={(props) => <Chess props={ {
-            server: {
-              prot: 'wss',
-              host: 'pchess.net',
-              port: '8443'
-            }
-          }} />}
-        />
-      </div>
+      <Route
+        exact path="/"
+        render={(props) => <Chess props={ {
+          server: {
+            prot: 'wss',
+            host: 'pchess.net',
+            port: '8443'
+          }
+        }} />}
+      />
       <Route
         path="/about"
         render={(props) => <Docs {...props} />}
