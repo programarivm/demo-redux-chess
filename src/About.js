@@ -10,12 +10,12 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import BarChartIcon from '@material-ui/icons/BarChart';
+import BarChartIcon from '@mui/icons-material/BarChart';
 // icons
-import BugReportIcon from '@material-ui/icons/BugReport';
-import LanguageIcon from '@material-ui/icons/Language';
-import LaptopWindowsIcon from '@material-ui/icons/LaptopWindows';
-import StorageIcon from '@material-ui/icons/Storage';
+import BugReportIcon from '@mui/icons-material/BugReport';
+import LanguageIcon from '@mui/icons-material/Language';
+import LaptopWindowsIcon from '@mui/icons-material/LaptopWindows';
+import StorageIcon from '@mui/icons-material/Storage';
 
 const useStyles = makeStyles((theme) => ({
   box: {

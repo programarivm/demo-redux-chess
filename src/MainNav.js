@@ -1,6 +1,6 @@
 import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
 import { Link, Route } from 'react-router-dom';
-import InfoIcon from '@material-ui/icons/Info';
+import InfoIcon from '@mui/icons-material/Info';
 import { Chess } from '@chesslablab/redux-chess';
 import About from "./About.js";
 import Terms from "./Terms.js";
