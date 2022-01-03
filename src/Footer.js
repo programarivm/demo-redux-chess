@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { Grid, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
-import EmojiFoodBeverage from '@material-ui/icons/EmojiFoodBeverageTwoTone';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LockIcon from '@material-ui/icons/LockTwoTone';
-import SubjectIcon from '@material-ui/icons/SubjectTwoTone';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Typography from '@material-ui/core/Typography';
 import CookieConsent from 'react-cookie-consent';
@@ -37,38 +33,10 @@ const Footer = () => {
         <Grid item xs={12} sm={12} md={1} />
         <Grid item xs={12} sm={12} md={5} className={classes.company}>
           <Typography color="secondary" variant="subtitle2">
-            Redux Chess Demo,<br/>
-            Something here to give the footer a purpose!<br/>
-            Company Number: 1234567890
+            ChesslabLab,<br/>
+            Open-source community<br/>
+            Let's create something awesome!
           </Typography>
-        </Grid>
-        <Grid item xs={12} sm={12} md={3}>
-          <List component="nav" aria-label="legal">
-            <Link to="/terms" style={{ textDecoration: 'none' }}>
-              <ListItem button>
-                <ListItemIcon>
-                  <SubjectIcon />
-                </ListItemIcon>
-                <ListItemText secondary="Terms of Use" />
-              </ListItem>
-            </Link>
-            <Link to="/privacy-policy" style={{ textDecoration: 'none' }}>
-              <ListItem button>
-                <ListItemIcon>
-                  <LockIcon />
-                </ListItemIcon>
-                <ListItemText secondary="Privacy Policy" />
-              </ListItem>
-            </Link>
-            <Link to="/cookies-policy" style={{ textDecoration: 'none' }}>
-              <ListItem button>
-                <ListItemIcon>
-                  <EmojiFoodBeverage />
-                </ListItemIcon>
-                <ListItemText secondary="Cookies Policy" />
-              </ListItem>
-            </Link>
-          </List>
         </Grid>
         <Grid item xs={12} sm={12} md={3}>
           <List component="nav" aria-label="social">
