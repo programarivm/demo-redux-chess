@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Paper, Typography } from '@material-ui/core';
-import { makeStyles } from '@mui/material/styles';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
   box: {
