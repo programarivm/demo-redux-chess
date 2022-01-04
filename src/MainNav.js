@@ -1,4 +1,4 @@
-import { AppBar, Button, Grid, Toolbar } from '@material-ui/core';
+import { AppBar, Button, Grid, Toolbar } from '@mui/material';
 import { Link, Route } from 'react-router-dom';
 import InfoIcon from '@mui/icons-material/Info';
 import { Chess } from '@chesslablab/redux-chess';

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Grid, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Typography from '@mui/material/Typography';

@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Paper, Typography } from '@material-ui/core';
+import { Box, Container, Grid, Paper, Typography } from '@mui/material';
 import { CopyBlock, dracula } from "react-code-blocks";
 import { makeStyles } from '@mui/styles';
 import Button from '@mui/material/Button';
