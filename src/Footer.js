@@ -1,23 +1,12 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { makeStyles } from '@mui/styles';
 import { Grid, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Typography from '@mui/material/Typography';
 import CookieConsent from 'react-cookie-consent';
 
-const useStyles = makeStyles({
-  footer: {
-    marginTop: 45,
-    paddingTop: 35,
-    paddingBottom: 35,
-    backgroundColor: '#e8e8e8'
-  },
-});
-
 const Footer = () => {
-  const classes = useStyles();
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -26,7 +15,7 @@ const Footer = () => {
 
   return (
     <>
-      <Grid container className={classes.footer}>
+      <Grid container style={{ marginTop: 50, borderTop: '1px solid #ccc', padding: 30 }}>
         <Grid item xs={12} sm={12} md={1} />
         <Grid item xs={12} sm={12} md={5}>
           <Typography color="secondary" variant="subtitle2">
