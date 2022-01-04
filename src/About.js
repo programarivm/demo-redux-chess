@@ -333,7 +333,7 @@ function About() {
               Pricing
             </Typography>
             <Typography variant="body1" paragraph>
-              If you're looking forward to working on a startup product but it still feels a little over your head, you may want to work together with a mentor solving issues on GitHub.
+              If you're looking forward to working on a startupish product —  or want to transfer your skills to a different stack —  but it still feels a little over your head, you may want to work together with a mentor solving ChesslabLab issues on GitHub.
               Become a sponsor to Jordi today and let's create something awesome!
             </Typography>
             <Card variant="outlined">
