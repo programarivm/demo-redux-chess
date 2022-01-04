@@ -105,15 +105,18 @@ function About() {
               codeBlock
             />
             <Typography variant="body1" paragraph style={{marginTop: 20}}>
-              For example, if the title of the issue is <a className={classes.link} href="https://github.com/chesslablab/redux-chess/issues/116">Display an informative message when the FEN string is not valid #116</a> then its corresponding Git branch should be checked out from master like this.
+              For example, if the title of the issue is <a className={classes.link} href="https://github.com/chesslablab/redux-chess/issues/236">Update to MUI 5 #236</a> then its corresponding Git branch should be checked out from <code>master</code> like this.
             </Typography>
             <CopyBlock
-              text={`$ git checkout -b issue/116-display-an-informative-message-when-the-fen-string-is-not-valid`}
+              text={`$ git checkout -b issue/236-update-to-MUI-5`}
               language="text"
               theme={dracula}
               showLineNumbers={false}
               codeBlock
             />
+            <Typography variant="body1" paragraph style={{marginTop: 20}}>
+              That's it.
+            </Typography>
             <Typography className={classes.header} variant="h5" gutterBottom>
               But hang on a minute
             </Typography>
@@ -344,7 +347,7 @@ function About() {
                   $35 one time tier
                 </Typography>
                 <Typography variant="p">
-                  Let's work together on a ChesslabLab issue labeled with <code>learning</code>.
+                  Let's work together on a ChesslabLab issue labeled with <code>sponsored</code>.
                 </Typography>
               </CardContent>
               <CardActions>
