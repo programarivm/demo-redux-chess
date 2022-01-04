@@ -80,9 +80,6 @@ function About() {
               for playing around with machine learning libraries. A bunch of public chess repos ranging
               from React and JavaScript to PHP are available on the <a className={classes.link} href="https://github.com/chesslablab" style={{ textDecoration: 'none' }}>ChesslabLab</a> community on GitHub.
             </Typography>
-            <Typography variant="body1" paragraph>
-              What a better moment to read the contributing guidelines than now?
-            </Typography>
             <Typography className={classes.header} variant="h5">
               Contributing guidelines
             </Typography>
