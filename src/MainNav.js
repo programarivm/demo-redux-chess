@@ -3,9 +3,6 @@ import { Link, Route } from 'react-router-dom';
 import InfoIcon from '@mui/icons-material/Info';
 import { Chess } from '@chesslablab/redux-chess';
 import About from "./About.js";
-import Terms from "./Terms.js";
-import PrivacyPolicy from "./PrivacyPolicy.js";
-import CookiesPolicy from "./CookiesPolicy.js";
 import logo from './assets/img/logo.png';
 
 const MainNav = () => {
@@ -47,18 +44,6 @@ const MainNav = () => {
       <Route
         path="/about"
         render={(props) => <About {...props} />}
-      />
-      <Route
-        path="/terms"
-        render={(props) => <Terms {...props} />}
-      />
-      <Route
-        path="/privacy-policy"
-        render={(props) => <PrivacyPolicy {...props} />}
-      />
-      <Route
-        path="/cookies-policy"
-        render={(props) => <CookiesPolicy {...props} />}
       />
     </div>
   );

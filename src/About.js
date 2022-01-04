@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -13,36 +12,37 @@ import ListItemText from '@mui/material/ListItemText';
 import BarChartIcon from '@mui/icons-material/BarChart';
 // icons
 import BugReportIcon from '@mui/icons-material/BugReport';
-import LanguageIcon from '@mui/icons-material/Language';
-import LaptopWindowsIcon from '@mui/icons-material/LaptopWindows';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+import PhpIcon from '@mui/icons-material/Php';
 import StorageIcon from '@mui/icons-material/Storage';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   box: {
-    padding: theme.spacing(2),
-    margin: theme.spacing(2),
+    padding: 15,
+    margin: 15,
   },
   paper: {
-    padding: theme.spacing(2),
-    color: theme.palette.text.primary,
+    padding: 40,
   },
   copyBlock: {
     marginBottom: 30
   },
-  titleBold: {
-    color: '#505050',
-    fontWeight: 'bold'
-  },
-  subtitle: {
-    color: '#c0c0c0',
-  },
   title: {
     color: '#505050',
-    marginTop: 30,
+  },
+  subtitle: {
+    color: '#505050',
+    marginBottom: '0.25em !important',
+  },
+  header: {
+    color: '#505050',
+    marginTop: '1.95em !important',
+    marginBottom: '1em !important',
+    textAlign: 'center',
   },
   skill: {
     color: '#505050',
-    marginTop: 10,
+    marginTop: '1em !important',
     textAlign: 'center'
   },
   link: {
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: 'underline !important'
     }
   }
-}));
+});
 
 function About() {
   const classes = useStyles();
@@ -61,11 +61,11 @@ function About() {
   return <div>
     <Container maxWidth="lg">
       <Box className={classes.box}>
-        <Typography className={classes.titleBold} variant="h5" component="h1" align="center">
+        <Typography className={classes.title} variant="h4" component="h1" align="center">
           ChesslabLab
         </Typography>
-        <Typography className={classes.titleBold} variant="h6" align="center">
-          Open-source community to learn web development and chess
+        <Typography className={classes.subtitle} variant="h5" align="center">
+          Open-source community
         </Typography>
         <Typography variant="caption" component="p" align="center">
           Last Revised: January 3, 2022
@@ -74,21 +74,17 @@ function About() {
       <Grid container>
         <Grid item xs={12} sm={12} md={12}>
           <Paper className={classes.paper}>
-            <Typography className={classes.title} variant="h5" gutterBottom>
-              Introduction
-            </Typography>
             <Typography variant="body1" paragraph>
               The game of chess involves quite a few different aspects of software development,
               which makes it a perfect topic for learning full-stack web development as well as
               for playing around with machine learning libraries. A bunch of public repos ranging
-              from React and JavaScript to PHP are waiting for you to contribute to the <a className={classes.link} href="https://github.com/chesslablab" style={{ textDecoration: 'none' }}>ChesslabLab</a> on GitHub,
-              so what a better moment to read the contributing guidelines than now?
+              from React and JavaScript to PHP are waiting for you to contribute to the <a className={classes.link} href="https://github.com/chesslablab" style={{ textDecoration: 'none' }}>ChesslabLab</a> community on GitHub.
             </Typography>
-            <Divider />
-            <Typography className={classes.title} variant="h5" gutterBottom>
+            <Typography className={classes.header} variant="h5">
               Contributing guidelines
             </Typography>
             <Typography variant="body1" paragraph>
+              What a better moment to read the contributing guidelines than now?
               <ul>
                 <li>Find a <a className={classes.link} href="https://github.com/chesslablab">ChesslabLab</a> repo and make sure to read its <code>CONTRIBUTING.md</code> file.</li>
                 <li>Look at the open issues.</li>
@@ -116,8 +112,7 @@ function About() {
               showLineNumbers={false}
               codeBlock
             />
-            <Divider style={{marginTop: 20}} />
-            <Typography className={classes.title} variant="h5" gutterBottom>
+            <Typography className={classes.header} variant="h5" gutterBottom>
               But hang on a minute
             </Typography>
             <Typography variant="body1" paragraph>
@@ -136,7 +131,7 @@ function About() {
                     <a className={classes.link} href="https://javascript.plainenglish.io/what-is-redux-chess-6264c99c1eca">
                       <ListItem>
                         <ListItemIcon>
-                          <LaptopWindowsIcon />
+                          <JavascriptIcon />
                         </ListItemIcon>
                         <ListItemText
                           primary="What Is Redux Chess?"
@@ -147,7 +142,7 @@ function About() {
                     <a className={classes.link} href="https://javascript.plainenglish.io/check-out-the-redux-chess-demo-acbea003d710">
                       <ListItem>
                         <ListItemIcon>
-                          <LaptopWindowsIcon />
+                          <JavascriptIcon />
                         </ListItemIcon>
                         <ListItemText
                           primary="Check Out the Redux Chess Demo"
@@ -158,7 +153,7 @@ function About() {
                     <a className={classes.link} href="https://javascript.plainenglish.io/getting-ready-for-debugging-react-redux-apps-a1eefea535">
                       <ListItem>
                         <ListItemIcon>
-                          <LaptopWindowsIcon />
+                          <JavascriptIcon />
                         </ListItemIcon>
                         <ListItemText
                           primary="Getting Ready for Debugging React Redux Apps"
@@ -173,10 +168,21 @@ function About() {
                     PHP
                   </Typography>
                   <List>
+                    <a className={classes.link} href="https://medium.com/geekculture/why-php-cannot-die-2e03cde66ff8">
+                      <ListItem>
+                        <ListItemIcon>
+                          <PhpIcon />
+                        </ListItemIcon>
+                        <ListItemText
+                          primary="Why PHP Cannot Die"
+                          secondary="Because PHP was in the right place at the right time"
+                        />
+                      </ListItem>
+                    </a>
                     <a className={classes.link} href="https://medium.com/geekculture/installing-multiple-alternative-versions-of-php-on-ubuntu-b2acc7af3260">
                       <ListItem>
                         <ListItemIcon>
-                          <LanguageIcon />
+                          <PhpIcon />
                         </ListItemIcon>
                         <ListItemText
                           primary="Installing Multiple Alternative Versions of PHP on Ubuntu"
@@ -187,22 +193,11 @@ function About() {
                     <a className={classes.link} href="https://ai.plainenglish.io/preparing-a-dataset-for-machine-learning-with-php-fd68dd85187e">
                       <ListItem>
                         <ListItemIcon>
-                          <LanguageIcon />
+                          <PhpIcon />
                         </ListItemIcon>
                         <ListItemText
                           primary="Preparing a Dataset for Machine Learning With PHP"
                           secondary="Contrary to popular belief, Python is not the only programming language for data science"
-                        />
-                      </ListItem>
-                    </a>
-                    <a className={classes.link} href="https://medium.com/geekculture/why-php-cannot-die-2e03cde66ff8">
-                      <ListItem>
-                        <ListItemIcon>
-                          <LanguageIcon />
-                        </ListItemIcon>
-                        <ListItemText
-                          primary="Why PHP Cannot Die"
-                          secondary="Because PHP was in the right place at the right time"
                         />
                       </ListItem>
                     </a>
@@ -334,8 +329,7 @@ function About() {
                 </Grid>
               </Grid>
             </Box>
-            <Divider />
-            <Typography className={classes.title} variant="h5" gutterBottom>
+            <Typography className={classes.header} variant="h5" gutterBottom>
               Pricing
             </Typography>
             <Typography variant="body1" paragraph>
