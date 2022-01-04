@@ -1,11 +1,20 @@
 import { AppBar, Button, Grid, Toolbar } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import { Link, Route } from 'react-router-dom';
 import InfoIcon from '@mui/icons-material/Info';
 import { Chess } from '@chesslablab/redux-chess';
 import About from "./About.js";
 import logo from './assets/img/logo.png';
 
+const useStyles = makeStyles({
+  chess: {
+    margin: 15,
+  },
+});
+
 const MainNav = () => {
+  const classes = useStyles();
+
   return (
     <div>
       <AppBar position="relative" style={{ background: '#fff' }}>
@@ -33,13 +42,15 @@ const MainNav = () => {
       </AppBar>
       <Route
         exact path="/"
-        render={(props) => <Chess props={ {
-          server: {
-            prot: 'wss',
-            host: 'pchess.net',
-            port: '8443'
-          }
-        }} />}
+        render={(props) => <div className={classes.chess}>
+          <Chess props={{
+            server: {
+              prot: 'wss',
+              host: 'pchess.net',
+              port: '8443'
+            }
+          }} />
+        </div>}
       />
       <Route
         path="/about"
