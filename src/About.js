@@ -65,7 +65,7 @@ function About() {
           ChesslabLab
         </Typography>
         <Typography className={classes.subtitle} variant="h5" align="center">
-          Open-source community
+          Open Source community
         </Typography>
         <Typography variant="caption" component="p" align="center">
           Last Revised: January 3, 2022
@@ -77,14 +77,16 @@ function About() {
             <Typography variant="body1" paragraph>
               The game of chess involves quite a few different aspects of software development,
               which makes it a perfect topic for learning full-stack web development as well as
-              for playing around with machine learning libraries. A bunch of public repos ranging
-              from React and JavaScript to PHP are waiting for you to contribute to the <a className={classes.link} href="https://github.com/chesslablab" style={{ textDecoration: 'none' }}>ChesslabLab</a> community on GitHub.
+              for playing around with machine learning libraries. A bunch of public chess repos ranging
+              from React and JavaScript to PHP are available on the <a className={classes.link} href="https://github.com/chesslablab" style={{ textDecoration: 'none' }}>ChesslabLab</a> community on GitHub.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              What a better moment to read the contributing guidelines than now?
             </Typography>
             <Typography className={classes.header} variant="h5">
               Contributing guidelines
             </Typography>
             <Typography variant="body1" paragraph>
-              What a better moment to read the contributing guidelines than now?
               <ul>
                 <li>Find a <a className={classes.link} href="https://github.com/chesslablab">ChesslabLab</a> repo and make sure to read its <code>CONTRIBUTING.md</code> file.</li>
                 <li>Look at the open issues.</li>
@@ -117,7 +119,7 @@ function About() {
             </Typography>
             <Typography variant="body1" paragraph>
               It's not always peaches and cream, especially at the beginning of your career path to becoming a full-stack developer.
-              So I thought that it would be helpful to share some of my favorite episodes on creating a startupish product,
+              So I thought that it'd be helpful to share some of my favorite episodes on creating a startupish product,
               from tesing and DevOps to data science, among others.
             </Typography>
             <Box sx={{ flexGrow: 1 }}>
