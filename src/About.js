@@ -17,16 +17,6 @@ import PhpIcon from '@mui/icons-material/Php';
 import StorageIcon from '@mui/icons-material/Storage';
 
 const useStyles = makeStyles({
-  box: {
-    padding: 15,
-    margin: 15,
-  },
-  paper: {
-    padding: 40,
-  },
-  copyBlock: {
-    marginBottom: 30
-  },
   title: {
     color: '#505050',
   },
@@ -37,7 +27,7 @@ const useStyles = makeStyles({
   header: {
     color: '#505050',
     marginTop: '1.95em !important',
-    marginBottom: '1em !important',
+    marginBottom: '1.15em !important',
     textAlign: 'center',
   },
   skill: {
@@ -60,7 +50,7 @@ function About() {
 
   return <div>
     <Container maxWidth="lg">
-      <Box className={classes.box}>
+      <Box sx={{ m: 2, p: 2 }}>
         <Typography className={classes.title} variant="h4" component="h1" align="center">
           ChesslabLab
         </Typography>
@@ -73,7 +63,7 @@ function About() {
       </Box>
       <Grid container>
         <Grid item xs={12} sm={12} md={12}>
-          <Paper className={classes.paper}>
+          <Paper sx={{ p: 5 }}>
             <Typography variant="body1" paragraph>
               The game of chess involves quite a few different aspects of software development,
               which makes it a perfect topic for learning full-stack web development as well as
@@ -338,7 +328,7 @@ function About() {
               If you're looking forward to working on a startupish product —  or want to transfer your skills to a different stack —  but it still feels a little over your head, you may want to work together with a mentor solving ChesslabLab issues on GitHub.
               Become a sponsor to Jordi today and let's create something awesome!
             </Typography>
-            <Card variant="outlined">
+            <Card sx={{ my: 1 }} variant="outlined">
               <CardContent>
                 <Typography variant="h6">
                   $35 one time tier
@@ -351,7 +341,7 @@ function About() {
                 <Button target="_blank" href="https://github.com/sponsors/programarivm?frequency=one-time">Become a sponsor</Button>
               </CardActions>
             </Card>
-            <Card variant="outlined">
+            <Card sx={{ my: 1 }} variant="outlined">
               <CardContent>
                 <Typography variant="h6">
                   $85 one time tier
