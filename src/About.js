@@ -351,6 +351,19 @@ function About() {
                 <Button target="_blank" href="https://github.com/sponsors/programarivm?frequency=one-time">Become a sponsor</Button>
               </CardActions>
             </Card>
+            <Card variant="outlined">
+              <CardContent>
+                <Typography variant="h6">
+                  $85 one time tier
+                </Typography>
+                <Typography variant="p">
+                  Let's work together on three ChesslabLab issues labeled with <code>sponsored</code>.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button target="_blank" href="https://github.com/sponsors/programarivm?frequency=one-time">Become a sponsor</Button>
+              </CardActions>
+            </Card>
           </Paper>
         </Grid>
       </Grid>
