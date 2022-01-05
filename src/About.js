@@ -316,7 +316,7 @@ function About() {
                         />
                       </ListItem>
                     </a>
-                    <a className={classes.link} href="https://medium.com/geekculture/newbie-tutorial-on-how-to-rate-limit-a-websocket-server-8e28642ad5ff">
+                    <a className={classes.link} href="https://medium.com/geekculture/using-restricted-permutations-to-classify-chess-positions-for-further-supervised-learning-27eeb3f71d82">
                       <ListItem>
                         <ListItemIcon>
                           <BarChartIcon />
