@@ -331,7 +331,7 @@ function About() {
             <Card sx={{ my: 1 }} variant="outlined">
               <CardContent>
                 <Typography variant="h6">
-                  $35 one time tier
+                  $45 one time tier
                 </Typography>
                 <Typography variant="p">
                   Let's work together on a ChesslabLab issue labeled with <code>sponsored</code>.
@@ -344,7 +344,7 @@ function About() {
             <Card sx={{ my: 1 }} variant="outlined">
               <CardContent>
                 <Typography variant="h6">
-                  $85 one time tier
+                  $95 one time tier
                 </Typography>
                 <Typography variant="p">
                   Let's work together on three ChesslabLab issues labeled with <code>sponsored</code>.
