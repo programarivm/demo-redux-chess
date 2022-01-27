@@ -2,9 +2,6 @@ import { Box, Container, Grid, Paper, Typography } from '@mui/material';
 import { CopyBlock, dracula } from "react-code-blocks";
 import { makeStyles } from '@mui/styles';
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -58,7 +55,7 @@ function About() {
           Open Source community
         </Typography>
         <Typography variant="caption" component="p" align="center">
-          Last Revised: January 3, 2022
+          Last Revised: January 27, 2022
         </Typography>
       </Box>
       <Grid container>
@@ -108,7 +105,7 @@ function About() {
               But hang on a minute
             </Typography>
             <Typography variant="body1" paragraph>
-              It's not always peaches and cream, especially at the beginning of your career path to becoming a full-stack developer.
+              It may not be as easy as it sounds, especially at the beginning of your career path to becoming a full-stack developer.
               So I thought that it'd be helpful to share some of my favorite episodes on creating a startupish product,
               from tesing and DevOps to data science, among others.
             </Typography>
@@ -321,39 +318,9 @@ function About() {
                 </Grid>
               </Grid>
             </Box>
-            <Typography className={classes.header} variant="h5" gutterBottom>
-              Pricing
-            </Typography>
             <Typography variant="body1" paragraph>
               If you're looking forward to working on a startupish product —  or want to transfer your skills to a different stack —  but it still feels a little over your head, you may want to work together with a mentor solving ChesslabLab issues on GitHub.
-              Become a sponsor to Jordi today and let's create something awesome!
             </Typography>
-            <Card sx={{ my: 1 }} variant="outlined">
-              <CardContent>
-                <Typography variant="h6">
-                  $45 one time tier
-                </Typography>
-                <Typography variant="p">
-                  Let's work together on a ChesslabLab issue labeled with <code>sponsored</code>.
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button target="_blank" href="https://github.com/sponsors/programarivm?frequency=one-time">Become a sponsor</Button>
-              </CardActions>
-            </Card>
-            <Card sx={{ my: 1 }} variant="outlined">
-              <CardContent>
-                <Typography variant="h6">
-                  $95 one time tier
-                </Typography>
-                <Typography variant="p">
-                  Let's work together on three ChesslabLab issues labeled with <code>sponsored</code>.
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button target="_blank" href="https://github.com/sponsors/programarivm?frequency=one-time">Become a sponsor</Button>
-              </CardActions>
-            </Card>
           </Paper>
         </Grid>
       </Grid>
