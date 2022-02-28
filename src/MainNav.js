@@ -25,6 +25,11 @@ const MainNav = () => {
       </AppBar>
       <div className={classes.chess}>
         <Chess props={{
+          api: {
+            prot: 'https',
+            host: 'pchess.net',
+            port: '443'
+          },
           server: {
             prot: 'wss',
             host: 'pchess.net',
