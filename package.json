@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://programarivm.github.io/demo-redux-chess/",
   "dependencies": {
-    "@chesslablab/redux-chess": "^0.9",
+    "@chesslablab/redux-chess": "^1.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.4.1",
