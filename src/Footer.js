@@ -21,7 +21,7 @@ const Footer = () => {
           <Typography color="secondary" variant="subtitle2">
             ChesslabLab,<br/>
             Open Source community<br/>
-            Let's create something awesome!
+            Happy learning and coding!
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={3}>
