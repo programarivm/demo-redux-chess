@@ -167,14 +167,14 @@ const About = () => {
                            />
                          </ListItem>
                        </a>
-                       <a className={classes.link} href="https://medium.com/geekculture/installing-multiple-alternative-versions-of-php-on-ubuntu-b2acc7af3260">
+                       <a className={classes.link} href="https://medium.com/codex/replacing-ternary-operators-with-the-elvis-operator-f0a0d808bdfa">
                          <ListItem>
                            <ListItemIcon>
                              <PhpIcon />
                            </ListItemIcon>
                            <ListItemText
-                             primary="Installing Multiple Alternative Versions of PHP on Ubuntu"
-                             secondary="This tutorial also applies to any other Debian based Linux distro"
+                             primary="Replacing Ternary Operators With the Elvis Operator"
+                             secondary="Because Elvis is the king of rock and roll"
                            />
                          </ListItem>
                        </a>
