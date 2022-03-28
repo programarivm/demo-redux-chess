@@ -11,7 +11,9 @@ const MainNav = () => {
         <Toolbar>
           <Grid container justifyContent="space-between">
             <Grid item>
-              <img src={logo} className="logo" alt="logo" />
+              <Link to="/">
+                <img src={logo} className="logo" alt="logo" />
+              </Link>
             </Grid>
           </Grid>
           <Link to="/about" style={{ textDecoration: 'none', color: '#505050'}}>
