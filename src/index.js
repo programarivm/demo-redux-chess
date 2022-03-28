@@ -1,6 +1,6 @@
 import { render } from "react-dom";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -10,11 +10,11 @@ import About from "./routes/about";
 const rootElement = document.getElementById("demo");
 
 render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="about" element={<About />} />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   rootElement
 );
