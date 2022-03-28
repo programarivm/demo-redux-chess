@@ -1,6 +1,6 @@
 {
   "name": "demo-redux-chess",
-  "version": "0.1.0",
+  "version": "0.1.01",
   "private": true,
   "homepage": "https://programarivm.github.io/demo-redux-chess/",
   "dependencies": {
