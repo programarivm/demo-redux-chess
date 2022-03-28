@@ -1,15 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import MainNav from './MainNav';
-import Footer from './Footer';
-import { HashRouter } from "react-router-dom";
-import { CssBaseline } from "@mui/material";
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import App from "./App";
+import About from "./routes/about";
 
-ReactDOM.render(
-  <HashRouter>
-    <CssBaseline />
-    <MainNav />
-    <Footer />
-  </HashRouter>,
-  document.getElementById('demo')
+const rootElement = document.getElementById("demo");
+
+render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="about" element={<About />} />
+    </Routes>
+  </BrowserRouter>,
+  rootElement
 );

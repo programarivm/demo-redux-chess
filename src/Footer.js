@@ -45,9 +45,7 @@ const Footer = () => {
           </List>
         </Grid>
       </Grid>
-      <CookieConsent
-        buttonText="Accept"
-      >
+      <CookieConsent buttonText="Accept">
         Cookies? Mmm, they are delicious! This website does not collect personal data through third-party cookies.
       </CookieConsent>
     </>
