@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Typography from '@mui/material/Typography';
@@ -32,6 +33,14 @@ const Footer = () => {
                   <GitHubIcon />
                 </ListItemIcon>
                 <ListItemText secondary="GitHub" />
+              </ListItem>
+            </a>
+            <a href="https://programarivm.medium.com" style={{ textDecoration: 'none' }}>
+              <ListItem button>
+                <ListItemIcon>
+                  <MenuBookIcon />
+                </ListItemIcon>
+                <ListItemText secondary="Medium" />
               </ListItem>
             </a>
             <a href="https://twitter.com/programarivm" style={{ textDecoration: 'none' }}>
