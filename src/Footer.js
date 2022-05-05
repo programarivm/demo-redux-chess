@@ -27,7 +27,7 @@ const Footer = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={3}>
           <List component="nav" aria-label="social">
-            <a href="https://github.com/programarivm/redux-chess" style={{ textDecoration: 'none' }}>
+            <a href="https://github.com/chesslablab" style={{ textDecoration: 'none' }}>
               <ListItem button>
                 <ListItemIcon>
                   <GitHubIcon />

@@ -3,7 +3,7 @@ import { Chess } from '@chesslablab/redux-chess';
 
 const useStyles = makeStyles({
   myChess: {
-    margin: 15,
+    margin: 10,
   },
 });
 
