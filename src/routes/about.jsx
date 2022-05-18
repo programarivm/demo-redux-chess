@@ -7,20 +7,11 @@ import {
   CardMedia,
   Container,
   Grid,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Paper,
   Typography
 } from '@mui/material';
 import { CopyBlock, dracula } from "react-code-blocks";
 import { makeStyles } from '@mui/styles';
-import BarChartIcon from '@mui/icons-material/BarChart';
-import BugReportIcon from '@mui/icons-material/BugReport';
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import PhpIcon from '@mui/icons-material/Php';
-import StorageIcon from '@mui/icons-material/Storage';
 import Footer from '../Footer';
 import MainNav from '../MainNav';
 
@@ -37,11 +28,6 @@ const useStyles = makeStyles({
     marginTop: '1.95em !important',
     marginBottom: '1.15em !important',
     textAlign: 'center',
-  },
-  skill: {
-    color: '#505050',
-    marginTop: '1em !important',
-    textAlign: 'center'
   },
   link: {
     fontWeight: 'bold',
@@ -131,7 +117,7 @@ const About = () => {
                             component="img"
                             alt="What Is Redux Chess?"
                             height="140"
-                            image="what-is-redux-chess.png"
+                            image="what-is-redux-chess.jpg"
                           />
                           <CardContent>
                             <Typography gutterBottom variant="h7" component="div">
