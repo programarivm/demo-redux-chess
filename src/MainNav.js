@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { AppBar, Button, CssBaseline, Grid, Toolbar } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
-import logo from './assets/img/logo.png';
 
 const MainNav = () => {
   return (
@@ -13,7 +12,7 @@ const MainNav = () => {
           <Grid container justifyContent="space-between">
             <Grid item>
               <Link to="/">
-                <img src={logo} className="logo" alt="logo" />
+                <img src="logo.png" className="logo" alt="logo" />
               </Link>
             </Grid>
           </Grid>
