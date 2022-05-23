@@ -14,7 +14,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Typography from '@mui/material/Typography';
 import CookieConsent from 'react-cookie-consent';
-import cube from './assets/img/cube.png';
 
 const Footer = () => {
   const { pathname } = useLocation();
